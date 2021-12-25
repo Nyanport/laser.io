@@ -10,7 +10,7 @@
   width: 100px;
   height: 100px;
   background-color: black;
-  animation-name: example;
+  animation-name: move;
   animation-duration: 4s;
   animation-fill-mode: both;
   border: 4mm ridge #aaaaaa;
@@ -27,12 +27,23 @@
   left: 50%; /* relative to nearest positioned ancestor or body element */
   top: 50%; /*  relative to nearest positioned ancestor or body element */
 }
-@keyframes example {
+@keyframes move {
   from {transform: translate(-50%, -500px);}
   to {transform: translate(-50%, -100px);}
 }
+ @keyframes bckground {
+  from {background-color: #00ee00;}
+  to {background-color: #00dd00;}
+}
 html {
   font-family: Ubuntu Mono, monospace;  
+
+  animation-name: bckground;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  color: #00ff00;
+ }
 }
 </style>
 </head>

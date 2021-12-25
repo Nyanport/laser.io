@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>laser.io by Nyanport Studios</title>
+<style> 
+.button {
+  display: flex; /* establish flex container */
+  justify-content: center; /* center flex items horizontally, in this case */
+  align-items: center; /* center flex items vertically, in this case */
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  border: 4mm ridge #aaaaaa;
+  color: #ffffff;
+ }
+ a, u {
+  text-decoration: none !important;
+   color: #ffffff;
+
+ }
+.buttons {
+  display: block;
+  position: absolute;
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 50%; /*  relative to nearest positioned ancestor or body element */
+}
+@keyframes example {
+  from {transform: translate(-50%, -500px);}
+  to {transform: translate(-50%, -100px);}
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">laser.io</h1>
+
+<div class="buttons">
+
+
+<div class="button"><a href="https://buggemdeveloper.github.io/laser.io/">Play it now</a></div>
+
+<div class="button"><a href="https://buggemdeveloper.github.io/laser.io/wiki">Wiki</a></div>
+
+
+<div class="button"><a href="https://buggemdeveloper.github.io/laser.io/changelog">Changelog</a></div>
+
+</div>
+
+
+</body>
+</html>
+
+

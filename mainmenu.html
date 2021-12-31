@@ -28,8 +28,13 @@
   top: 50%; /*  relative to nearest positioned ancestor or body element */
 }
 @keyframes move {
-  from {transform: translate(-50%, -500px);}
-  to {transform: translate(-50%, -100px);}
+  0% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateY(0vh);
+  }
 }
  @keyframes bckground {
   from {background-color: #00ee00;}

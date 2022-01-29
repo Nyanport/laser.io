@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Oh, hello over there, gitbit here, thanks for submitting an issue! I'll get the devs to reply to you shortly'
+        pr-message: 'HEYO, it's me gitbit! You just submitted a pull request. We'll respond to your request eventually.'
